@@ -3,29 +3,30 @@ var upKey;
 game.MyStates = {}
 game.MyStates.state1 = {
     preload:function(){
-        console.log('preload')
+        console.log('preload1')
     },
     create:function(){
-        console.log('create')
+        console.log('create1')
         upKey = game.input.keyboard.addKey(Phaser.Keyboard.UP)
     },
     update:function(){
-        console.log('update')
+        console.log('update1')
         if(upKey.isDown){
             console.log('upKey')
+            game.state.start('state2')
         }
     }
 }
 
 game.MyStates.state2 = {
     preload: function () {
-        console.log('preload')
+        console.log('preload2')
     },
     create: function () {
-        console.log('create')
+        console.log('create2')
     },
     update: function () {
-        console.log('update')
+        console.log('update2')
     }
 }
 
