@@ -70,7 +70,7 @@ game.MyStates.start = {
         console.log('preload1')
     },
     create:function(){
-        console.log('create1')
+        console.log('进入主游戏场景')
     },
     update:function(){
         console.log('update1')
@@ -81,7 +81,7 @@ game.MyStates.over = {
         console.log('preload2')
     },
     create: function () {
-        console.log('进入主游戏场景')
+        console.log('create2')
     },
     update: function () {
         console.log('update2')
